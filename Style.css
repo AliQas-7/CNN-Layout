@@ -1,0 +1,357 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background-color: #000;
+  color: #FF0000;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+/* Navbar styles */
+nav {
+  background-color: #333;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #FF5555;
+}
+
+
+img:hover {
+  filter: grayscale(20%);
+}
+
+
+/* Generic styles for main content container */
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Generic styles for news container */
+.news-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-right: -2rem;
+  /* Adjusted margin */
+}
+
+#main-headline {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Generic styles for news items */
+.news-item {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  margin-right: 2rem;
+  /* Adjusted margin */
+  max-width: 20rem;
+  /* Adjusted max-width */
+  transition: transform 0.2s;
+  /* Add a smooth transition for hover effect */
+}
+
+/* Hover effect for news items */
+.news-item:hover {
+  transform: scale(1.02);
+  /* Slightly scale up on hover */
+}
+
+/* Style for headlines */
+.news-item h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style for news item images */
+.news-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style for links */
+.news-item a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+}
+
+/* Style for bullet points */
+.news-item ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.news-item ul li {
+  font-size: 15px;
+  /* Adjusted font size */
+  font-weight: normal;
+  /* Remove bold for list items */
+  margin-bottom: 10px;
+}
+
+.bigger-news {
+  flex: 2;
+  /* Make it twice as wide as the small news articles */
+  max-width: 100%;
+  transition: transform 0.2s;
+  /* Add a smooth transition for hover effect */
+}
+
+/* Hover effect for the headline news */
+.bigger-news:hover {
+  transform: scale(1.02);
+  /* Slightly scale up on hover */
+}
+
+.news-item.bigger-news {
+  width: 40rem;
+  /* Adjust the width to make it bigger */
+}
+
+#col3-first-news {
+  margin-top: -8rem;
+}
+
+#col3-second-news {
+  margin-top: -2rem;
+}
+
+#col3-third-news {
+  display: flex;
+  margin-top: -8rem;
+}
+
+#felx-image {
+  margin-left: -2rem;
+  margin-right: 10px;
+  width: 10rem;
+  height: 5rem;
+}
+
+#col3-third-smallnews {
+  margin-top: 0rem;
+}
+
+#col4-first-news {
+  margin-top: -2rem;
+  margin-bottom: 4rem;
+}
+
+#col4-second-news {
+  display: flex;
+  margin-top: 21rem;
+  margin-left: -21rem;
+}
+
+#col4-second1-news {
+  display: flex;
+  margin-top: 28rem;
+  margin-left: -24rem;
+}
+
+
+#col4-third-news {
+  margin-left: -1rem;
+  margin-top: -2rem;
+}
+
+#below-main-news {
+  display: flex;
+  margin-top: 0rem;
+  max-width: 40rem;
+}
+
+
+
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+
+  nav {
+    position: static;
+    text-align: center;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  nav ul {
+    padding: 5px 0;
+    display: block;
+  }
+
+  nav li {
+    margin: 0;
+    padding: 10px;
+    display: inline-block;
+  }
+
+  .news-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-item {
+    max-width: 20rem;
+    margin: 10px 0;
+    margin-bottom: -2rem;
+  }
+
+  .news-item.bigger-news {
+    width: 100rem;
+    /* Adjust the width to make it bigger */
+  }
+
+  .news-item.bigger-news img {
+    height: 25rem;
+    /* Adjust the width to make it bigger */
+  }
+
+  .news-item ul {
+    list-style-type: disc;
+    margin-left: -2rem;
+  }
+
+  .news-item ul li {
+    font-size: 15px;
+    /* Adjusted font size */
+    font-weight: normal;
+    /* Remove bold for list items */
+    margin-bottom: 10px;
+  }
+
+  #col4-first-news {
+    margin-top: 3rem;
+  }
+
+  #col4-second-news {
+    display: flex;
+    margin-top: -5rem;
+    margin-left: 0rem;
+  }
+
+  #col4-second1-news {
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 0rem;
+    margin-bottom: 3rem;
+  }
+
+  #col4-third-news {
+    margin-left: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+  
+  #below-main-news {
+    display: flex;
+    margin-top: 1rem;
+    max-width: 20rem;
+    margin-bottom: 1rem;
+  }
+
+  #col3-main{
+    margin-bottom: 5rem;
+  }
+
+  #same-news{
+    margin-left: -2rem;
+  } 
+}
+
+
+
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Style the footer columns */
+.footer-column {
+  width: 20%;
+  float: left;
+}
+
+/* Style the column headings */
+.footer-column h4 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+/* Style the subcategories */
+.footer-subcategory {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style the subcategory items */
+.footer-subcategory li {
+  padding: 5px 0;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer-column {
+    margin-top: 0rem;
+      width: 50%;
+  }
+
+  .footer {
+    margin-top: 3rem;
+  }
+}
